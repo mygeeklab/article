@@ -1,0 +1,69 @@
+<!--
+  Generated template for the ArticleDetail component.
+
+  See https://angular.io/docs/ts/latest/api/core/index/ComponentMetadata-class.html
+  for more info on Angular 2 Components.
+-->
+<ion-content no-padding class="detail">
+
+  <div class="header">
+
+      <img src="images/header.jpg" alt="placeholder image" class="header-image" />
+
+      <ion-fab class="share" top right  padding>
+
+        <button ion-fab color="danger"><ion-icon name="md-share"></ion-icon></button>
+
+        <ion-fab-list side="bottom">
+
+          <button ion-fab color="primary"><ion-icon name="logo-vimeo"></ion-icon></button>
+
+          <button ion-fab color="primary"><ion-icon name="logo-facebook"></ion-icon></button>
+
+          <button ion-fab color="primary"><ion-icon name="logo-googleplus"></ion-icon></button>
+
+           <button ion-fab color="primary"><ion-icon name="logo-twitter"></ion-icon></button>
+
+        </ion-fab-list>
+
+      </ion-fab>
+
+  </div>
+
+    <div class="title" padding>
+
+      {{article.title}}
+
+    </div>
+
+    <div class="author" padding>
+
+      {{article.author}}
+
+    </div>
+
+    <div class="tags">
+
+      <ion-row>
+
+        <ion-item>
+          <ion-col>
+
+                <ion-icon name="pricetags" color="primary">     </ion-icon>
+                {{article.tag}}
+
+          </ion-col>
+
+        </ion-item>
+
+     </ion-row>
+    
+    </div>
+
+  <div class="content" padding>
+
+    {{article.content}}
+
+  </div>
+
+</ion-content>
